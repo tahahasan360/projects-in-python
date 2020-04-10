@@ -40,8 +40,6 @@ with open(argv[1], 'r') as data:
         for s in range(len(list)):
             if int(row[s + 1]) != int(DNA_dict[f'{list[s]}']):
                 y += 1
-                #print(row[s + 1], end="")
-                #print (DNA_dict[f'{list[s]}'])
         if y == 0:
             print(row[0])
             exit()
